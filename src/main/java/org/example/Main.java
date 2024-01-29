@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         for (int i = 0; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
+            if (Modulo.mod(i,3) && Modulo.mod(i,5)) {
                 System.out.println("FizzBuzz");
-            } else if (i % 3 == 0) {
+            } else if (Modulo.mod(i,3)) {
                 System.out.println("Fizz");
-            } else if (i % 5 == 0) {
+            } else if (Modulo.mod(i,5)) {
                 System.out.println("Buzz");
             } else {
                 System.out.println(i);
