@@ -7,7 +7,11 @@ public class Main {
 
         String text = "qqbccvqvccbqq";
 
-        if (isPalindrome(text)) {
+        text = text.trim();
+        if (text.length() > 0) {
+            if (isPalindrome(text)) {
+                System.out.println("This text is a palindrome");
+            }
             System.out.println(text.length());
         }
     }
